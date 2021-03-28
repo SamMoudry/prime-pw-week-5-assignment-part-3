@@ -26,3 +26,18 @@ function showCollection( array ) {
   }
 }
 showCollection(collection);
+
+function findByArtist( artist ) {
+  let results = []
+  for (let i = 0; i < collection.length; i++) {
+    if (artist === collection[i].artist) {
+      results.push(collection[i]);
+    } else {
+    }
+  }
+  console.log(results);
+}
+findByArtist("Corpse");
+findByArtist("Jon Bellion");
+findByArtist("TheFatRat");
+findByArtist("Panic! At The Disco");
